@@ -1,5 +1,12 @@
 @media (min-width: 992px) {
-	h1.company-name{
+	.section-title {
+		font-size: 4.8rem;
+		&::before {
+			height: 4px;
+		}
+	}
+
+	h1.company-name {
 		font-size: 6rem;
 	}
 	.header {
@@ -70,9 +77,8 @@
 					height: 100%;
 					border: 1px solid $gold;
 					opacity: 0;
-					
 				}
-				&:hover::before{
+				&:hover::before {
 					animation: pulse 1s;
 				}
 			}
@@ -84,11 +90,14 @@
 }
 
 @media (min-width: 1200px) {
-	.header{
-		&__text{
-			p{
+	.header {
+		&__text {
+			p {
 				font-size: 2.2rem;
 			}
 		}
+	}
+	.gallery {
+		grid-template-columns: repeat(8, 1fr);
 	}
 }
